@@ -1,60 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:background="@color/verdeescuro"
     >
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="160dp"
-        android:background="@color/white"
-        android:autofillHints="emailAddress"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginVertical="16dp"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:autofillHints="password"
-        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="16dp"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
         >
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/login"
-            android:textSize="18sp"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="160dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="#CB999999"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_user"
+            android:contentDescription="Foto do usuário"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
             />
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/register"
-            android:textSize="18sp"
+        <EditText
+            style="@style/StyleForInput"
+            android:autofillHints="emailAddress"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
             />
+
+        <EditText
+            style="@style/StyleForInput"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/login"
+                android:textSize="18sp"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceitar os termos"
+            android:textColor="@color/white"
+            android:checked="true"
+            />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Aaaaa"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:paddingVertical="32dp"/>-->
     </LinearLayout>
-</LinearLayout>
+</ScrollView>
