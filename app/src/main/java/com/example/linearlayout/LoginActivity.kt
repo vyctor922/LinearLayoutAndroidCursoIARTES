@@ -9,11 +9,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.EditText
 import android.widget.Toast
+import com.example.linearlayout.database.BancoDeDadosHelper
 import com.example.linearlayout.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var database: BancoDeDadosHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +23,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         // Inicializar o binding
         // Inflate: Criar a view a partir do Layout
         binding = ActivityLoginBinding.inflate(layoutInflater)
+
+        database = BancoDeDadosHelper(this)
+        database.readableDatabase
+
         enableEdgeToEdge()
         // Carrego minha interface a partir do objeto binding
         setContentView(binding.main)
